@@ -1,0 +1,27 @@
+// Fontawesome import
+@import './../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import './../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+@import './../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+@import './../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+
+// Bootstrap import
+@import './../../node_modules/bootstrap/scss/bootstrap-grid.scss';
+@import './../../node_modules/bootstrap/scss/bootstrap-reboot.scss';
+@import './../../node_modules/bootstrap/scss/bootstrap-utilities.scss';
+
+// Fonts import
+@import './styles/fonts';
+
+// Variables import
+@import './styles/variables';
+
+// UI import
+@import './styles/ui/index';
+
+// Common import
+@import './styles/common/index';
+
+body {
+  background-color: aquamarine;
+  font-family: 'Playfair Display';
+}
