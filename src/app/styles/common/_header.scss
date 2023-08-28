@@ -1,8 +1,161 @@
 .header {
-  div {
-    width: 400px;
-    height: 100px;
-    background-color: red;
-    color: white;
+  padding-top: 16px;
+  width: 100%;
+
+  @include media-breakpoint-up(lg) {
+    padding-top: 40px;
+    background: no-repeat center center/cover
+      url('./../../../../public/images/banners/banner.png');
+    height: 500px;
+    width: 100%;
+  }
+
+  &-secondary {
+    font-size: 24px;
+    margin-bottom: 10px;
+
+    @include media-breakpoint-up(lg) {
+      height: 432px;
+      margin: 0;
+    }
+
+    &-inner {
+      @include media-breakpoint-up(lg) {
+        display: grid;
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr 1fr;
+        padding: 0 132px;
+      }
+    }
+
+    .header-connect {
+      color: $white;
+      grid-area: 1 / 1 / 2 / 2;
+
+      ul {
+        gap: 20px;
+        letter-spacing: 0.24px;
+
+        li:last-child {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .header-controls {
+      h1 {
+        font-size: 20px;
+        font-weight: 400;
+        font-family: 'Roboto';
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      ul {
+        gap: 10px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        grid-area: 1 / 2 / 2 / 3;
+        justify-self: end;
+
+        form {
+          display: flex;
+          flex-direction: row-reverse;
+          border: 1px solid $gray-primary;
+          gap: 10px;
+          padding-left: 10px;
+
+          input {
+            outline: none;
+            border: none;
+            background: none;
+            max-width: 224px;
+            font-size: 14px;
+          }
+
+          input::placeholder {
+            font-size: 14px;
+            font-family: 'Roboto';
+            color: inherit;
+          }
+        }
+      }
+    }
+  }
+
+  &-primary {
+    background-color: $brand-primary;
+
+    @include media-breakpoint-up(lg) {
+      color: $brand-secondary;
+      font-size: 20px;
+      text-transform: uppercase;
+      padding: 16px 0 12px 0;
+
+      a {
+        transition: color 0.2s linear;
+      }
+
+      a:hover {
+        color: $gray-tertiary;
+      }
+    }
+
+    &-search {
+      color: $white;
+      display: grid;
+      grid-template: 1fr / 1fr 1fr;
+
+      button[type='button'] {
+        grid-area: 1 / 1 / 2 / 2;
+        font-size: 30px;
+        justify-self: start;
+      }
+
+      form {
+        grid-area: 1 / 1 / 2 / 3;
+        justify-self: end;
+        align-self: center;
+        display: flex;
+        align-items: center;
+        font-size: 20px;
+        color: $brand-secondary;
+        border: 2px solid $gray-tertiary;
+        padding: 0 16px;
+        width: 230px;
+
+        input {
+          border: none;
+          background: none;
+          color: $white;
+          outline: none;
+          font-size: 12px;
+          width: 100%;
+        }
+
+        input::placeholder {
+          color: $brand-secondary;
+          text-transform: lowercase;
+          font-style: italic;
+        }
+      }
+    }
+
+    &-banner {
+      button[type='button'] {
+        font-size: 12px;
+        background-color: $white;
+        text-transform: uppercase;
+        padding: 4px 16px;
+        position: absolute;
+        bottom: 32px;
+        right: 32px;
+      }
+
+      img {
+        width: 100%;
+      }
+    }
   }
 }
