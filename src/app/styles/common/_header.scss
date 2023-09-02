@@ -1,5 +1,4 @@
 .header {
-  padding-top: 16px;
   width: 100%;
 
   @include media-breakpoint-up(lg) {
@@ -11,12 +10,20 @@
   }
 
   &-secondary {
+    width: 100%;
+    padding: 10px 0;
+    background: $white;
     font-size: 24px;
-    margin-bottom: 10px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 
     @include media-breakpoint-up(lg) {
       height: 432px;
       margin: 0;
+      padding: 0;
+      background: none;
+      position: static;
     }
 
     &-inner {
@@ -46,7 +53,7 @@
           text-align: center;
 
           a {
-            transition: color 0.2s linear, font-size 0.2s linear;
+            transition: color 0.1s linear, font-size 0.1s linear;
           }
 
           a:hover {
@@ -109,12 +116,14 @@
 
   &-primary {
     background-color: $brand-primary;
+    margin-top: 56px;
 
     @include media-breakpoint-up(lg) {
       color: $brand-secondary;
       font-size: 20px;
       text-transform: uppercase;
       padding: 16px 0 12px 0;
+      margin: 0;
 
       a {
         transition: color 0.2s linear;

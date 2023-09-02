@@ -59,7 +59,11 @@ export default function Header() {
           </section>
 
           <section className="header-controls d-flex justify-content-between align-items-center">
-            <h1 className="d-inline-block d-lg-none">Monochrome</h1>
+            <h1 className="d-inline-block d-lg-none">
+              <a href="/" title="Home Page">
+                Monochrome
+              </a>
+            </h1>
 
             <ul className="d-flex gap-lg-3">
               <li className="d-none d-lg-block">
