@@ -5,7 +5,7 @@ export default function Header() {
         <div className="header-secondary-inner container">
           <section className="header-connect d-none d-lg-block">
             <ul className="d-none d-lg-flex align-items-center">
-              <li>
+              <li className="icon-social">
                 <a
                   href="http://www.youtube.com"
                   title="Follow us on Youbte"
@@ -16,7 +16,7 @@ export default function Header() {
                 </a>
               </li>
 
-              <li>
+              <li className="icon-social">
                 <a
                   href="http://www.facebook.com"
                   title="Follow us on Facebook"
@@ -27,7 +27,7 @@ export default function Header() {
                 </a>
               </li>
 
-              <li>
+              <li className="icon-social">
                 <a
                   href="http://www.twitter.com"
                   title="Follow us on Twitter"
@@ -38,7 +38,7 @@ export default function Header() {
                 </a>
               </li>
 
-              <li>
+              <li className="icon-social">
                 <a
                   href="http://www.instagram.com"
                   title="Follow us on Instagram"
@@ -135,7 +135,7 @@ export default function Header() {
           </ul>
         </div>
 
-        <div className="header-primary-search container d-lg-none">
+        <div className="header-primary-search container d-lg-none position-relative">
           <button type="button" title="Menu">
             <i class="fa-solid fa-bars"></i>
           </button>
@@ -152,20 +152,17 @@ export default function Header() {
               <i class="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
+
+          <a
+            href="/"
+            title="Check out what's new!"
+            className="button-new-products"
+          >
+            New In
+          </a>
         </div>
 
-        <div className="header-primary-banner d-lg-none">
-          <picture className="d-block position-relative">
-            <img
-              src="/images/banners/mobile-banner-low-res.png"
-              alt="Monochrome Banner"
-            />
-
-            <button type="button" title="Check out what's new!">
-              New In
-            </button>
-          </picture>
-        </div>
+        <div className="header-primary-banner d-lg-none"></div>
       </section>
     </>
   );

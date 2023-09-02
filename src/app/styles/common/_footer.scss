@@ -1,8 +1,201 @@
 .footer {
-  div {
-    width: 400px;
-    height: 100px;
-    background-color: blue;
-    color: white;
+  background: $brand-secondary;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+
+  @include media-breakpoint-up(lg) {
+    padding: 40px 0;
+    font-size: 22px;
+  }
+
+  &-inner {
+    @include media-breakpoint-up(lg) {
+      display: grid;
+      grid-template: 1fr / repeat(4, 1fr);
+      text-align: initial;
+      font-family: 'Playfair Display', sans-serif;
+      margin: 0 auto;
+
+      @media (min-width: 992px) {
+        max-width: 936px;
+      }
+
+      @media (min-width: 1200px) {
+        max-width: 1116px;
+      }
+
+      @media (min-width: 1400px) {
+        max-width: 1296px;
+      }
+    }
+  }
+
+  h1 {
+    font-size: 22px;
+    font-family: 'Playfair Display', sans-serif;
+    text-transform: initial;
+  }
+
+  &-contact {
+    @include media-breakpoint-up(lg) {
+      text-transform: lowercase;
+      grid-area: 1 / 1 / 2 / 2;
+    }
+  }
+
+  &-nav {
+    background: $bg-gray;
+    color: $white;
+    padding: 32px 0;
+    text-transform: lowercase;
+
+    @include media-breakpoint-up(lg) {
+      grid-area: 1 / 2 / 2 / span 2;
+      padding: 0;
+      background: transparent;
+      color: $brand-primary;
+    }
+
+    &-inner {
+      footer {
+        text-decoration: underline;
+        font-style: italic;
+        font-weight: 300;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding: 0;
+      }
+    }
+
+    &-content {
+      flex-direction: row-reverse;
+      margin: 40px 0;
+
+      ul {
+        padding: 0 20px;
+      }
+
+      ul:first-child {
+        border-left: 2px solid;
+      }
+
+      @include media-breakpoint-up(lg) {
+        grid-template: 1fr / 1fr 1fr;
+        justify-items: center;
+        margin: 0;
+
+        ul {
+          padding: 0;
+        }
+
+        ul:first-child {
+          border: 0;
+        }
+      }
+    }
+  }
+
+  &-connect {
+    padding: 32px 0;
+
+    @include media-breakpoint-up(lg) {
+      grid-area: 1 / 4 / 2 / 5;
+      padding: 0;
+    }
+
+    &-inner {
+      @include media-breakpoint-up(lg) {
+        padding: 0;
+      }
+    }
+
+    &-subscribe {
+      div:last-child {
+        font-size: 12px;
+        padding: 0 30px;
+      }
+
+      input[type='email']:focus {
+        outline: none;
+      }
+
+      input[type='email'] {
+        width: 75%;
+        padding: 0 10px;
+        color: $brand-primary;
+      }
+
+      input[type='email']::placeholder {
+        color: $gray-tertiary;
+        font-size: 14px;
+        font-style: italic;
+      }
+
+      .button-subscribe {
+        align-self: center;
+      }
+
+      input[type='checkbox'] {
+        width: 24px;
+        height: 16px;
+      }
+
+      label[for^='privacy'] {
+        span {
+          text-decoration: underline;
+        }
+      }
+
+      @include media-breakpoint-up(lg) {
+        form {
+          align-items: start;
+        }
+
+        label[for*='subscribe'] {
+          span {
+            text-transform: lowercase;
+          }
+        }
+
+        div:last-child {
+          font-size: 16px;
+          padding: 0;
+        }
+
+        input[type='checkbox'] {
+          width: 42px;
+          height: 20px;
+        }
+
+        .button-subscribe {
+          align-self: start;
+          order: 1;
+        }
+
+        input[type='email'] {
+          width: 100%;
+          font-size: 16px;
+          line-height: 20px;
+          padding: 10px;
+        }
+
+        input[type='email']::placeholder {
+          color: $gray-tertiary;
+          font-size: 16px;
+          font-style: italic;
+        }
+      }
+    }
+
+    &-socials {
+      font-size: 26px;
+
+      ul {
+        li:nth-child(odd) {
+          order: -1;
+        }
+      }
+    }
   }
 }

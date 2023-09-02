@@ -10,7 +10,7 @@ export default function Home() {
 
       <main className="content"></main>
 
-      <footer className="footer">
+      <footer className="footer mt-5">
         <Footer></Footer>
       </footer>
     </>

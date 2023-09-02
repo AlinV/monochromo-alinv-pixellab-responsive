@@ -33,11 +33,26 @@
       grid-area: 1 / 1 / 2 / 2;
 
       ul {
+        height: 34px;
         gap: 20px;
         letter-spacing: 0.24px;
 
         li:last-child {
           font-size: 16px;
+        }
+
+        .icon-social {
+          width: 34px;
+          text-align: center;
+
+          a {
+            transition: color 0.2s linear, font-size 0.2s linear;
+          }
+
+          a:hover {
+            color: $gray-tertiary;
+            font-size: 30px;
+          }
         }
       }
     }
@@ -78,6 +93,14 @@
             font-size: 14px;
             font-family: 'Roboto';
             color: inherit;
+          }
+        }
+
+        a {
+          transition: color 0.2s linear;
+
+          &:hover {
+            color: $gray-secondary;
           }
         }
       }
@@ -140,18 +163,19 @@
           font-style: italic;
         }
       }
+
+      .button-new-products {
+        position: absolute;
+        bottom: -330%;
+        right: 3%;
+      }
     }
 
     &-banner {
-      button[type='button'] {
-        font-size: 12px;
-        background-color: $white;
-        text-transform: uppercase;
-        padding: 4px 16px;
-        position: absolute;
-        bottom: 32px;
-        right: 32px;
-      }
+      background: url('/images/banners/mobile-banner-low-res.png') no-repeat
+        center center / cover;
+      height: 177px;
+      width: 100%;
 
       img {
         width: 100%;
