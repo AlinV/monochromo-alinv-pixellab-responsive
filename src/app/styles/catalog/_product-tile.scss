@@ -1,0 +1,62 @@
+.product-tile {
+  width: 50%;
+
+  &-header {
+    & > h1 {
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 22px;
+      margin-top: 10px;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .button-wish-list {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+
+    &-lg {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+    }
+  }
+
+  &-content {
+    .product-price {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 28px;
+      letter-spacing: 0.54px;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: initial;
+
+    &-header {
+      & > h1 {
+        font-size: 22px;
+        line-height: 40px;
+        letter-spacing: 0.8px;
+        margin-top: 20px;
+      }
+
+      div {
+        overflow: hidden;
+      }
+
+      img {
+        transition: transform 0.2s linear;
+      }
+
+      img:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

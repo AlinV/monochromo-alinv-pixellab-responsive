@@ -94,7 +94,7 @@ export default function Footer() {
         <div className="footer-connect">
           <section className="footer-connect-inner container">
             <div className="footer-connect-subscribe mb-4">
-              <h1 className="d-block d-lg-none mb-4">Let`s connect</h1>
+              <h1 className="d-block d-lg-none mb-4">Let{"'"}s connect</h1>
 
               <form className="d-flex flex-column gap-4  align-items-center gap-lg-3">
                 <div>
@@ -134,8 +134,11 @@ export default function Footer() {
                   />
 
                   <label htmlFor="privacy-policy">
-                    I agree with <span>Privacy Policy</span> and i want to
-                    receive emails from Monochrome
+                    I agree with{' '}
+                    <a href="/" title="Read our Privacy Policy">
+                      Privacy Policy
+                    </a>{' '}
+                    and I want to receive emails from Monochrome
                   </label>
                 </div>
               </form>

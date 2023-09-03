@@ -21,6 +21,12 @@
 // Common import
 @import './styles/common/index';
 
+// Catalog import
+@import './styles/catalog/index';
+
+// Home Content import
+@import './styles/home/home-content';
+
 body {
   font-size: 16px;
   font-family: 'Playfair Display', sans-serif;
@@ -37,6 +43,13 @@ input[type='button'] {
   background: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
 ul,
 ol {
   margin: 0;
@@ -49,4 +62,37 @@ ol {
 *::after {
   padding: 0;
   margin: 0;
+}
+
+.content-main {
+  text-align: center;
+
+  .home-catalog-preview {
+    border-top: 2px solid $gray-primary;
+    padding-top: 10px;
+    margin-bottom: 24px;
+
+    &-header {
+      margin-bottom: 10px;
+
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 24px;
+      }
+    }
+
+    &-header > h1 {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 24px;
+
+      @include media-breakpoint-up(lg) {
+        font-size: 36px;
+        line-height: 48px;
+      }
+    }
+  }
+
+  .header-text-transform {
+    text-transform: uppercase;
+  }
 }

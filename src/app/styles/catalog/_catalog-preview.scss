@@ -1,0 +1,9 @@
+.catalog-preview {
+  gap: 10px;
+  margin-bottom: 30px;
+
+  @include media-breakpoint-up(lg) {
+    gap: 24px;
+    margin-bottom: 60px;
+  }
+}
