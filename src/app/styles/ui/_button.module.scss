@@ -57,6 +57,7 @@
       font-size: 22px;
       background-color: none;
       letter-spacing: 0.88px;
+      text-transform: lowercase;
       transition: color 0.2s linear, background-color 0.2s linear;
 
       &:hover {
@@ -87,5 +88,23 @@
     background: transparent;
     border: 1px solid $brand-primary;
     width: fit-content;
+  }
+
+  &-sort-by-lg {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0.24px;
+    display: inline-block;
+    width: 100%;
+    padding: 12px 0 10px 0;
+    text-transform: uppercase;
+    text-align: center;
+    transition: background-color 0.2s linear, color 0.2s linear;
+
+    &:focus {
+      background-color: $brand-primary;
+      color: $white;
+    }
   }
 }

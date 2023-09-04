@@ -23,7 +23,10 @@ export default function Footer() {
             <div className="d-flex justify-content-center d-lg-grid footer-nav-content">
               <ul className="d-flex d-lg-block flex-column gap-3">
                 <li>
-                  <a href="/" title="Style & Fitt Advice">
+                  <a
+                    href="/style_and_fit_advice_page"
+                    title="Style & Fitt Advice"
+                  >
                     <span className="d-lg-none">Style and Fit</span>
 
                     <span className="d-none d-lg-inline">

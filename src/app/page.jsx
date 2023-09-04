@@ -82,7 +82,7 @@ export default function Home() {
         <section className="home-catalog-preview">
           <header className="home-catalog-preview-header">
             <h1 className="header-text-transform">
-              <a href="/" title="Check out our Colection">
+              <a href="/category_page" title="Check out our Colection">
                 Men{"'"}s
               </a>
             </h1>
@@ -92,7 +92,7 @@ export default function Home() {
 
           <footer className="footer-catalog-preview">
             <a
-              href="/"
+              href="/category_page"
               title="View all products"
               className="button button-primary-outline button-all-products d-inline-block d-lg-none"
             >
@@ -100,7 +100,7 @@ export default function Home() {
             </a>
 
             <a
-              href="/"
+              href="/category_page"
               title="View all products"
               className="button button-primary-outline button-all-products-lg d-none d-lg-inline-block"
             >

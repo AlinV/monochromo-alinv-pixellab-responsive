@@ -1,9 +1,15 @@
-export default function Header() {
+export default function Header2() {
   return (
     <>
-      <section className="header-secondary">
-        <div className="header-secondary-inner container">
-          <section className="header-connect d-none d-lg-block">
+      <section className="header-2-secondary">
+        <div className="header-2-secondary-inner container">
+          <h1 className="d-none d-lg-block">
+            <a href="/" title="Home Page">
+              Monochrome
+            </a>
+          </h1>
+
+          <section className="header-2-connect d-none d-lg-block">
             <ul className="d-none d-lg-flex align-items-center">
               <li className="icon-social">
                 <a
@@ -58,7 +64,7 @@ export default function Header() {
             </ul>
           </section>
 
-          <section className="header-controls d-flex justify-content-between align-items-center">
+          <section className="header-2-controls d-flex justify-content-between align-items-center">
             <h1 className="d-inline-block d-lg-none">
               <a href="/" title="Home Page">
                 Monochrome
@@ -103,8 +109,8 @@ export default function Header() {
         </div>
       </section>
 
-      <section className="header-primary">
-        <div className="header-primary-inner container d-none d-lg-block">
+      <section className="header-2-primary">
+        <div className="header-2-primary-inner container d-none d-lg-block">
           <ul className="d-flex justify-content-between align-items-center">
             <li>
               <a href="/" title="New Arrivals">
@@ -139,7 +145,7 @@ export default function Header() {
           </ul>
         </div>
 
-        <div className="header-primary-search container d-lg-none position-relative">
+        <div className="header-2-primary-search container d-lg-none position-relative">
           <button type="button" title="Menu">
             <i class="fa-solid fa-bars"></i>
           </button>
@@ -166,7 +172,7 @@ export default function Header() {
           </a>
         </div>
 
-        <div className="header-primary-banner d-lg-none"></div>
+        <div className="header-2-primary-banner d-lg-none"></div>
       </section>
     </>
   );

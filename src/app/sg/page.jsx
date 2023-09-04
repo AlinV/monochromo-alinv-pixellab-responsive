@@ -134,6 +134,14 @@ export default function StyleGuide() {
               >
                 Submit
               </button>
+
+              <button
+                type="button"
+                title="Sort by"
+                className="button button-primary-outline button-sort-by-lg"
+              >
+                Category Sort By
+              </button>
             </div>
           </div>
         </div>

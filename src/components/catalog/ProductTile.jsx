@@ -3,7 +3,7 @@ export default function ProductTile() {
     <>
       <header className="product-tile-header position-relative">
         <div>
-          <a href="/" title="Black Cluse watch with fabric strap">
+          <a href="/category_page" title="Black Cluse watch with fabric strap">
             <picture>
               <img
                 src="/images/products/recently_viewed_thumbnail_2-5.png"
@@ -14,7 +14,7 @@ export default function ProductTile() {
         </div>
 
         <h1>
-          <a href="/" title="Black Cluse watch with fabric strap">
+          <a href="/category_page" title="Black Cluse watch with fabric strap">
             Monochrome
           </a>
         </h1>

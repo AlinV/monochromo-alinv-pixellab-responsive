@@ -87,12 +87,14 @@
           border: 1px solid $gray-primary;
           gap: 10px;
           padding-left: 10px;
+          width: 254px;
 
           input {
             outline: none;
             border: none;
             background: none;
             max-width: 224px;
+            width: 100%;
             font-size: 14px;
           }
 

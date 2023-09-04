@@ -1,0 +1,70 @@
+.content-cat-page {
+  margin: 24px auto;
+
+  & > header {
+    margin-bottom: 30px;
+
+    & h1 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      font-weight: 300;
+      letter-spacing: 0.24px;
+      line-height: 32px;
+      text-align: justify;
+      color: $bg-gray;
+    }
+  }
+
+  .sort-bar-select {
+    outline: none;
+    width: 100%;
+    background-color: $brand-primary;
+    color: $white;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  @include media-breakpoint-up(lg) {
+    margin: 50px auto 100px auto;
+
+    & > header {
+      margin-bottom: 42px;
+
+      & h1 {
+        font-size: 36px;
+        line-height: 48px;
+        margin-bottom: 22px;
+      }
+
+      p {
+        max-width: 896px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 26px;
+        font-weight: 300;
+        letter-spacing: 1px;
+        line-height: 34px;
+        color: $bg-gray;
+      }
+    }
+
+    .sort-bar-inner {
+      margin-bottom: 48px;
+      display: grid;
+      grid-template: 1fr / repeat(6, 1fr);
+      justify-items: center;
+      gap: 24px;
+
+      & > li {
+        justify-self: stretch;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -16,7 +16,7 @@
 @import './styles/variables';
 
 // UI import
-@import './styles/ui/button';
+@import './styles/ui/button.module';
 
 // Common import
 @import './styles/common/index';
@@ -26,6 +26,9 @@
 
 // Home Content import
 @import './styles/home/home-content';
+
+// Category Page import
+@import './styles/category-page/category-page.module';
 
 body {
   font-size: 16px;
