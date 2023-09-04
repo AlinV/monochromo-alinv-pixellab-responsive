@@ -3,7 +3,10 @@ export default function ProductTile() {
     <>
       <header className="product-tile-header position-relative">
         <div>
-          <a href="/category_page" title="Black Cluse watch with fabric strap">
+          <a
+            href="/pages/category_page"
+            title="Black Cluse watch with fabric strap"
+          >
             <picture>
               <img
                 src="/images/products/recently_viewed_thumbnail_2-5.png"
@@ -14,13 +17,16 @@ export default function ProductTile() {
         </div>
 
         <h1>
-          <a href="/category_page" title="Black Cluse watch with fabric strap">
+          <a
+            href="/pages/category_page"
+            title="Black Cluse watch with fabric strap"
+          >
             Monochrome
           </a>
         </h1>
 
         <a
-          href="/"
+          href=""
           title="Add to wish list"
           className="button button-primary-outline button-wish-list d-inline d-lg-none"
         >
@@ -31,7 +37,7 @@ export default function ProductTile() {
         </a>
 
         <a
-          href="/"
+          href=""
           title="Add to wish list"
           className="button button-primary-outline button-wish-list-lg d-none d-lg-inline"
         >

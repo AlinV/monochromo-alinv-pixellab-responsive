@@ -24,7 +24,7 @@ export default function Footer() {
               <ul className="d-flex d-lg-block flex-column gap-3">
                 <li>
                   <a
-                    href="/style_and_fit_advice_page"
+                    href="/pages/style_and_fit_advice_page"
                     title="Style & Fitt Advice"
                   >
                     <span className="d-lg-none">Style and Fit</span>

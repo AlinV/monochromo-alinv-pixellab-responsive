@@ -93,7 +93,7 @@ export default function CategoryPage() {
             </li>
           </ul>
 
-          <select class="sort-bar-select d-inline-block d-lg-none">
+          <select className="sort-bar-select d-inline-block d-lg-none">
             <option selected>Bestsellers</option>
             <option value="1">$ High to low</option>
             <option value="2">$ Low to high</option>
@@ -129,7 +129,7 @@ export default function CategoryPage() {
 
         <footer className="text-center">
           <a
-            href="/category_page"
+            href="/pages/category_page"
             title="View all products"
             className="d-inline-block d-lg-none button button-primary-outline button-all-products"
           >
@@ -137,7 +137,7 @@ export default function CategoryPage() {
           </a>
 
           <a
-            href="/category_page"
+            href="/pages/category_page"
             title="View all products"
             className="d-none d-lg-inline-block button button-primary-outline button-all-products-lg"
           >

@@ -117,7 +117,7 @@ export default function Header() {
               </a>
             </li>
             <li>
-              <a href="/category_page" title="Men's">
+              <a href="/pages/category_page" title="Men's">
                 Men{"'"}s
               </a>
             </li>

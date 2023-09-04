@@ -123,7 +123,7 @@ export default function Header2() {
               </a>
             </li>
             <li>
-              <a href="/category_page" title="Men's">
+              <a href="/pages/category_page" title="Men's">
                 Men{"'"}s
               </a>
             </li>
