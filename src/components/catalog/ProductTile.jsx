@@ -4,7 +4,7 @@ export default function ProductTile() {
       <header className="product-tile-header position-relative">
         <div>
           <a
-            href="/pages/category_page"
+            href="/pages/product_description"
             title="Black Cluse watch with fabric strap"
           >
             <picture>
@@ -18,7 +18,7 @@ export default function ProductTile() {
 
         <h1>
           <a
-            href="/pages/category_page"
+            href="/pages/product_description"
             title="Black Cluse watch with fabric strap"
           >
             Monochrome
