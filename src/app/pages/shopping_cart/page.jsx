@@ -1,4 +1,5 @@
 import Footer from '@/components/common/Footer';
+import Footer2 from '@/components/common/Footer2';
 import Header2 from '@/components/common/Header2';
 
 export default function ShoppingCart() {
@@ -9,7 +10,7 @@ export default function ShoppingCart() {
       </header>
 
       <main className="shopping-cart container">
-        <header>
+        <header className="header3">
           <h1>Shopping cart</h1>
         </header>
 
@@ -90,42 +91,14 @@ export default function ShoppingCart() {
               <span>$475</span>
             </div>
 
-            <a href="" title="Buy now" className="buy-product">
+            <a href="/pages/sign_in" title="Buy now" className="buy-product">
               Buy now
             </a>
           </div>
         </section>
 
-        <footer>
-          <ul className="d-flex justify-content-center align-items-center gap-3">
-            <li>need help?</li>
-
-            <li>
-              <a href="tel:+44(0)1023456789">call us: +44 (0)10 2345 6789</a>
-            </li>
-
-            <li>|</li>
-
-            <li>
-              <a href="mailto:monochrome@gmail.com">email customer care</a>
-            </li>
-
-            <li>|</li>
-
-            <li>
-              <a href="/pages/shopping_cart" title="shipping information">
-                shipping information
-              </a>
-            </li>
-
-            <li>|</li>
-
-            <li>
-              <a href="/pages/shopping_cart" title="returns & exchanges">
-                returns & exchanges
-              </a>
-            </li>
-          </ul>
+        <footer className="footer2">
+          <Footer2></Footer2>
         </footer>
       </main>
 

@@ -3,14 +3,6 @@
     margin: 36px auto 90px auto;
     text-align: center;
 
-    header {
-      & > h1 {
-        font-size: 26px;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-      }
-    }
-
     &-content {
       margin: 36px 0 50px 0;
       padding: 16px 0 82px 0;
@@ -176,17 +168,6 @@
         padding: 14px 0 4px 0;
         width: 100%;
         border-bottom: 2px solid $gray-primary;
-      }
-    }
-
-    footer {
-      font-size: 22px;
-      font-weight: 400;
-
-      ul {
-        li:first-child {
-          font-weight: 600;
-        }
       }
     }
   }

@@ -1,0 +1,45 @@
+.confirmation {
+  @include media-breakpoint-up(lg) {
+    margin: 36px auto 90px auto;
+    text-align: center;
+
+    &-content {
+      margin: 36px 0 50px 0;
+      padding: 16px 0 82px 0;
+      border-top: 2px solid $gray-primary;
+      border-bottom: 2px solid $gray-primary;
+
+      & > ul {
+        padding: 0 128px 15px 128px;
+        border-bottom: 2px solid $gray-primary;
+        display: flex;
+        justify-content: space-between;
+        font-size: 22px;
+        letter-spacing: 0.33px;
+        text-transform: lowercase;
+
+        li {
+          position: relative;
+        }
+
+        span {
+          position: absolute;
+          width: 9px;
+          height: 9px;
+          border: 1px solid $gray-primary;
+          border-radius: 50%;
+          background-color: $white;
+          bottom: -20px;
+          left: 45%;
+        }
+
+        li:last-child {
+          span {
+            background-color: $black;
+            border: 1px solid $black;
+          }
+        }
+      }
+    }
+  }
+}
