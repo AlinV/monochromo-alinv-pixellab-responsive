@@ -137,7 +137,7 @@ export default function ProductDescription() {
                     <button type="button">Wishlist</button>
                   </div>
 
-                  <a href="" title="Go to checkout">
+                  <a href="/pages/shopping_cart" title="Go to checkout">
                     Checkout
                   </a>
                 </div>

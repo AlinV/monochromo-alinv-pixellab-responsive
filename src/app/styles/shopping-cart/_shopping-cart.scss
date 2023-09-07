@@ -1,0 +1,193 @@
+.shopping-cart {
+  @include media-breakpoint-up(lg) {
+    margin: 36px auto 90px auto;
+    text-align: center;
+
+    header {
+      & > h1 {
+        font-size: 26px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+    }
+
+    &-content {
+      margin: 36px 0 50px 0;
+      padding: 16px 0 82px 0;
+      border-top: 2px solid $gray-primary;
+      border-bottom: 2px solid $gray-primary;
+
+      & > ul {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        border-bottom: 2px solid $gray-primary;
+        font-size: 18px;
+
+        li {
+          width: 100%;
+        }
+
+        img {
+          width: 50%;
+        }
+      }
+
+      & > ul:first-of-type {
+        padding-bottom: 18px;
+
+        li {
+          letter-spacing: 0.28px;
+          text-transform: uppercase;
+        }
+      }
+
+      & > ul:last-of-type {
+        padding: 46px 0;
+        margin-bottom: 26px;
+        font-weight: 600;
+
+        .cart-product-description {
+          h2 {
+            font-size: inherit;
+            font-weight: inherit;
+            margin-bottom: 16px;
+          }
+
+          p {
+            font-size: 14px;
+            font-weight: 400;
+          }
+        }
+
+        .button-quantity {
+          border: 1px solid $gray-primary;
+          display: inline-flex;
+          width: fit-content;
+          gap: 20px;
+          padding: 4px 10px;
+
+          span {
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+          }
+
+          button {
+            font-size: 12px;
+            font-weight: 300;
+          }
+        }
+
+        li:last-of-type {
+          font-size: 24px;
+        }
+      }
+
+      & > div {
+        padding-right: 115px;
+
+        & > a {
+          font-family: 'Roboto', sans-serif;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 22px;
+          letter-spacing: 0.64px;
+          text-transform: uppercase;
+          border: 1px solid $gray-primary;
+          background-color: $brand-primary;
+          color: $white;
+          padding: 10px 44px;
+          transition: background-color 0.2s linear, color 0.2s linear;
+        }
+
+        & > a:hover {
+          background-color: transparent;
+          color: $brand-primary;
+        }
+      }
+
+      .button-ctrl {
+        display: flex;
+        gap: 48px;
+        padding-bottom: 20px;
+        position: relative;
+
+        a,
+        button {
+          padding: 14px;
+          font-size: 12px;
+          font-family: 'Roboto', sans-serif;
+          border: 1px solid $brand-primary;
+          text-transform: uppercase;
+          transition: background-color 0.2s linear, color 0.2s linear;
+        }
+
+        a:hover,
+        button:hover {
+          background-color: $brand-primary;
+          color: $white;
+        }
+      }
+
+      .button-ctrl::before {
+        content: '';
+        height: 2px;
+        width: 280%;
+        background-color: $gray-primary;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+      }
+
+      @media (max-width: 1400px) {
+        .button-ctrl::before {
+          width: 235%;
+        }
+      }
+
+      @media (max-width: 1200px) {
+        .button-ctrl::before {
+          width: 190%;
+        }
+      }
+    }
+
+    .cart-product-pricing {
+      display: grid;
+      grid-template: repeat(4, 1fr) / 1fr 1fr;
+      width: 27%;
+      justify-items: start;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 22px;
+      margin-bottom: 36px;
+
+      span:nth-child(odd) {
+        text-align: start;
+      }
+
+      span:nth-child(even) {
+        text-align: end;
+      }
+
+      span {
+        display: block;
+        padding: 14px 0 4px 0;
+        width: 100%;
+        border-bottom: 2px solid $gray-primary;
+      }
+    }
+
+    footer {
+      font-size: 22px;
+      font-weight: 400;
+
+      ul {
+        li:first-child {
+          font-weight: 600;
+        }
+      }
+    }
+  }
+}
