@@ -4,10 +4,9 @@
     text-align: center;
 
     &-content {
-      margin: 36px 0 50px 0;
-      padding: 16px 0 82px 0;
+      margin: 36px 0 112px 0;
+      padding-top: 16px;
       border-top: 2px solid $gray-primary;
-      border-bottom: 2px solid $gray-primary;
 
       & > ul {
         padding: 0 128px 15px 128px;
@@ -40,6 +39,133 @@
           }
         }
       }
+
+      &-section {
+        margin-bottom: 56px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid $gray-primary;
+
+        & > h1 {
+          margin-bottom: 56px;
+          font-size: 26px;
+          text-transform: uppercase;
+          text-align: start;
+        }
+
+        .billing-address {
+          & > a {
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+          }
+        }
+      }
+    }
+
+    .order-summary {
+      margin-top: 98px;
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        font-size: 18px;
+        margin-bottom: 18px;
+      }
+
+      li {
+        width: 100%;
+        letter-spacing: 0.28px;
+        text-transform: uppercase;
+      }
+    }
+
+    .order-summary-inner {
+      border-top: 2px solid $gray-primary;
+      padding-top: 46px;
+
+      & > ul {
+        font-weight: 500;
+        margin-bottom: 0;
+
+        img {
+          width: 50%;
+        }
+
+        li:first-of-type {
+          & > h2 {
+            font-size: 16px;
+          }
+        }
+
+        li:not(:first-child) {
+          font-size: 24px;
+        }
+      }
+
+      .total-price {
+        display: grid;
+        grid-template: 1fr / repeat(5, 1fr);
+        column-gap: 40px;
+        font-size: 24px;
+
+        span:first-of-type {
+          grid-area: 1 / 4 / 2 / 5;
+        }
+
+        span:last-of-type {
+          grid-area: 1 / 5 / 2 / 6;
+        }
+      }
+    }
+
+    .s-and-b-address {
+      &-inner {
+        display: grid;
+        grid-template: 1fr / 1fr 1fr;
+        padding-top: 20px;
+        padding-left: 32px;
+        border-top: 2px solid $gray-primary;
+
+        & > section {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          align-items: start;
+
+          & > h2 {
+            font-size: 18px;
+            font-weight: 600;
+            text-transform: uppercase;
+          }
+
+          & > p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+          }
+
+          & > a {
+            text-decoration: underline;
+            font-size: 18px;
+          }
+        }
+      }
+
+      .shipping-address {
+        & > p {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+        }
+      }
+    }
+
+    .delivery-method-inner {
+      display: grid;
+      grid-template: 1fr/1fr 1fr;
+      padding-top: 20px;
+      padding-left: 32px;
+      border-top: 2px solid #ccc;
     }
   }
 }

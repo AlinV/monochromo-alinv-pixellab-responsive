@@ -1,5 +1,5 @@
-import Footer from '@/components/common/Footer';
-import Header2 from '@/components/common/Header2';
+import Footer from '@/components/common/FooterMain';
+import Header2 from '@/components/common/HeaderOtherPages';
 
 export default function StyleAndFitAdvicePage() {
   return (

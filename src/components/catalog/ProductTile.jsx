@@ -1,27 +1,40 @@
-export default function ProductTile() {
+import { useState } from 'react';
+
+export default function ProductTile(props) {
+  // Images
+  const { products } = props;
+  const { imageSrc, imageAlt, heading, price } = products;
+
+  // Add/Remove to/from cart
+  const [quantity, setQuantity] = useState(0);
+  const stockLimit = Math.floor(Math.random() * 10);
+
+  const decreaseQuantity = () => {
+    if (quantity > 0) {
+      setQuantity(quantity - 1);
+    }
+  };
+
+  const increaseQuantity = () => {
+    if (quantity <= stockLimit) {
+      setQuantity(quantity + 1);
+    }
+  };
+
   return (
     <>
       <header className="product-tile-header position-relative">
-        <div>
-          <a
-            href="/pages/product_description"
-            title="Black Cluse watch with fabric strap"
-          >
+        <div className="over-hidden">
+          <a href="/product_description" title={imageAlt}>
             <picture>
-              <img
-                src="/images/products/recently_viewed_thumbnail_2-5.png"
-                alt="Black Cluse watch with fabric strap"
-              />
+              <img src={imageSrc} alt={imageAlt} />
             </picture>
           </a>
         </div>
 
         <h1>
-          <a
-            href="/pages/product_description"
-            title="Black Cluse watch with fabric strap"
-          >
-            Monochrome
+          <a href="/product_description" title={imageAlt}>
+            {heading}
           </a>
         </h1>
 
@@ -49,8 +62,28 @@ export default function ProductTile() {
       </header>
 
       <div className="product-tile-content">
-        <span className="product-price">$425</span>
+        <span className="product-price">{`$${price}`}</span>
       </div>
+
+      <footer className="product-tile-footer add-to-cart">
+        <button
+          type="button"
+          title="Remove from cart"
+          className="decrease-qty qty-button"
+          onClick={decreaseQuantity}
+        >
+          <i className="fa-solid fa-minus"></i>
+        </button>
+        <span className="product-qty">{quantity}</span>
+        <button
+          type="button"
+          title="Add to cart"
+          className="increase-qty qty-button"
+          onClick={increaseQuantity}
+        >
+          <i className="fa-solid fa-plus"></i>
+        </button>
+      </footer>
     </>
   );
 }

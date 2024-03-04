@@ -1,18 +1,18 @@
 import CatalogPreview from '@/components/catalog/CatalogPreview';
-import Footer from '@/components/common/Footer';
-import Header from '@/components/common/Header';
-import Header2 from '@/components/common/Header2';
+import FooterMain from '@/components/common/FooterMain';
+import HeaderMain from '@/components/common/HeaderMain';
+import HeaderOtherPages from '@/components/common/HeaderOtherPages';
 
 export default function CategoryPage() {
   return (
     <>
       <header>
         <div className="header-2 d-none d-lg-block">
-          <Header2></Header2>
+          <HeaderOtherPages></HeaderOtherPages>
         </div>
 
         <div className="header d-block d-lg-none">
-          <Header></Header>
+          <HeaderMain></HeaderMain>
         </div>
       </header>
 
@@ -129,7 +129,7 @@ export default function CategoryPage() {
 
         <footer className="text-center">
           <a
-            href="/pages/category_page"
+            href="/category_page"
             title="View all products"
             className="d-inline-block d-lg-none button button-primary-outline button-all-products"
           >
@@ -137,7 +137,7 @@ export default function CategoryPage() {
           </a>
 
           <a
-            href="/pages/category_page"
+            href="/category_page"
             title="View all products"
             className="d-none d-lg-inline-block button button-primary-outline button-all-products-lg"
           >
@@ -147,7 +147,7 @@ export default function CategoryPage() {
       </main>
 
       <footer className="footer">
-        <Footer></Footer>
+        <FooterMain></FooterMain>
       </footer>
     </>
   );

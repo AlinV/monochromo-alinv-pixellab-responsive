@@ -1,4 +1,4 @@
-export default function Footer2() {
+export default function FooterSecondary() {
   return (
     <>
       <ul className="d-flex justify-content-center align-items-center gap-3">
@@ -17,7 +17,7 @@ export default function Footer2() {
         <li>|</li>
 
         <li>
-          <a href="/pages/shopping_cart" title="shipping information">
+          <a href="" title="shipping information">
             shipping information
           </a>
         </li>
@@ -25,7 +25,7 @@ export default function Footer2() {
         <li>|</li>
 
         <li>
-          <a href="/pages/shopping_cart" title="returns & exchanges">
+          <a href="" title="returns & exchanges">
             returns & exchanges
           </a>
         </li>

@@ -40,6 +40,114 @@
           }
         }
       }
+
+      .shipping-form {
+        display: grid;
+        grid-template: 1fr/ 1fr 482px;
+        grid-auto-flow: row;
+        column-gap: 9%;
+        padding-left: 128px;
+        margin-top: 42px;
+
+        &-details {
+          font-size: 20px;
+
+          .form-info {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            margin-top: 34px;
+          }
+
+          .radio-chose-ba {
+            display: grid;
+            grid-template: 1fr 1fr / 1fr 2fr;
+            row-gap: 24px;
+            justify-items: flex-start;
+            margin-top: 48px;
+            font-family: 'Roboto', sans-serif;
+          }
+
+          .sp-as-ba {
+            grid-area: 1 / 2 / 2 / 3;
+          }
+
+          .separate-ba {
+            grid-area: 2 / 2 / 3 / 3;
+          }
+        }
+
+        &-details-inputs {
+          display: grid;
+          grid-area: 1 / 1 / 2 / 2;
+          grid-template: repeat(11, 40px) / 1fr;
+          grid-auto-rows: 1fr;
+          row-gap: 22px;
+
+          .input-details {
+            display: grid;
+            grid-template: 1fr / 1fr 2fr;
+            align-items: center;
+
+            & > label {
+              justify-self: start;
+            }
+          }
+
+          input[type='text'] {
+            align-self: stretch;
+            border: 2px solid $gray-primary;
+            outline: none;
+            padding: 0 10px;
+            font-size: 18px;
+          }
+        }
+
+        &-description {
+          grid-area: 1 / 2 / 2 / 3;
+          display: flex;
+          flex-direction: column;
+          border: 1px solid $gray-primary;
+          padding: 54px 42px;
+          align-self: start;
+          box-shadow: 2px 2px 4px $gray-primary, -2px 2px 4px $gray-primary;
+
+          & > h1 {
+            font-size: 22px;
+            font-weight: 600;
+            text-decoration: underline;
+            margin-bottom: 52px;
+          }
+
+          & > p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            line-height: 40px;
+            text-align: justify;
+          }
+
+          & > p:first-of-type {
+            margin-bottom: 42px;
+          }
+        }
+
+        button[type='button'] {
+          grid-area: 2 / 2 / 3 / 3;
+          justify-self: end;
+          text-transform: uppercase;
+          padding: 8px 28px;
+          background-color: $white;
+          color: $brand-primary;
+          border: 2px solid $brand-primary;
+          width: fit-content;
+          align-self: center;
+          transition: background-color 0.2s linear, color 0.2s linear;
+        }
+
+        button[type='button']:hover {
+          background-color: $brand-primary;
+          color: $white;
+        }
+      }
     }
   }
 }

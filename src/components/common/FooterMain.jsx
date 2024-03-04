@@ -1,4 +1,4 @@
-export default function Footer() {
+export default function FooterMain() {
   return (
     <>
       <div className="footer-inner">
@@ -16,15 +16,15 @@ export default function Footer() {
 
         <div className="footer-nav">
           <section className="footer-nav-inner container">
-            <header>
-              <h1 className="d-block d-lg-none">How can we help?</h1>
+            <header className="d-block d-lg-none">
+              <h1>How can we help?</h1>
             </header>
 
             <div className="d-flex justify-content-center d-lg-grid footer-nav-content">
               <ul className="d-flex d-lg-block flex-column gap-3">
                 <li>
                   <a
-                    href="/pages/style_and_fit_advice_page"
+                    href="/style_and_fit_advice_page"
                     title="Style & Fitt Advice"
                   >
                     <span className="d-lg-none">Style and Fit</span>
@@ -158,7 +158,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i class="fa-brands fa-youtube"></i>
+                    <i className="fa-brands fa-youtube"></i>
                   </a>
                 </li>
 
@@ -169,7 +169,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i class="fa-brands fa-facebook"></i>
+                    <i className="fa-brands fa-facebook"></i>
                   </a>
                 </li>
 
@@ -180,7 +180,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i class="fa-brands fa-twitter"></i>
+                    <i className="fa-brands fa-twitter"></i>
                   </a>
                 </li>
 
@@ -191,7 +191,7 @@ export default function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i class="fa-brands fa-instagram"></i>
+                    <i className="fa-brands fa-instagram"></i>
                   </a>
                 </li>
               </ul>

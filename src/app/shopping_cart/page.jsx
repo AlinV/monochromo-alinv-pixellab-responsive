@@ -1,6 +1,6 @@
-import Footer from '@/components/common/Footer';
-import Footer2 from '@/components/common/Footer2';
-import Header2 from '@/components/common/Header2';
+import Footer from '@/components/common/FooterMain';
+import Footer2 from '@/components/common/FooterSecondary';
+import Header2 from '@/components/common/HeaderOtherPages';
 
 export default function ShoppingCart() {
   return (
@@ -91,7 +91,7 @@ export default function ShoppingCart() {
               <span>$475</span>
             </div>
 
-            <a href="/pages/sign_in" title="Buy now" className="buy-product">
+            <a href="/sign_in" title="Buy now" className="buy-product">
               Buy now
             </a>
           </div>

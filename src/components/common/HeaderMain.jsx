@@ -1,15 +1,9 @@
-export default function Header2() {
+export default function HeaderMainPage() {
   return (
     <>
-      <section className="header-2-secondary">
-        <div className="header-2-secondary-inner container">
-          <h1 className="d-none d-lg-block">
-            <a href="/" title="Home Page">
-              Monochrome
-            </a>
-          </h1>
-
-          <section className="header-2-connect d-none d-lg-block">
+      <section className="header-secondary">
+        <div className="header-secondary-inner container">
+          <section className="header-connect d-none d-lg-block">
             <ul className="d-none d-lg-flex align-items-center">
               <li className="icon-social">
                 <a
@@ -18,7 +12,7 @@ export default function Header2() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa-brands fa-youtube"></i>
+                  <i className="fa-brands fa-youtube"></i>
                 </a>
               </li>
 
@@ -29,7 +23,7 @@ export default function Header2() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa-brands fa-facebook"></i>
+                  <i className="fa-brands fa-facebook"></i>
                 </a>
               </li>
 
@@ -40,7 +34,7 @@ export default function Header2() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa-brands fa-twitter"></i>
+                  <i className="fa-brands fa-twitter"></i>
                 </a>
               </li>
 
@@ -51,7 +45,7 @@ export default function Header2() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa-brands fa-instagram"></i>
+                  <i className="fa-brands fa-instagram"></i>
                 </a>
               </li>
 
@@ -64,7 +58,7 @@ export default function Header2() {
             </ul>
           </section>
 
-          <section className="header-2-controls d-flex justify-content-between align-items-center">
+          <section className="header-controls d-flex justify-content-between align-items-center">
             <h1 className="d-inline-block d-lg-none">
               <a href="/" title="Home Page">
                 Monochrome
@@ -82,26 +76,26 @@ export default function Header2() {
                   />
 
                   <button type="submit" title="Search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i className="fa-solid fa-magnifying-glass"></i>
                   </button>
                 </form>
               </li>
 
               <li>
                 <a href="/" title="User Account">
-                  <i class="fa-solid fa-user"></i>
+                  <i className="fa-solid fa-user"></i>
                 </a>
               </li>
 
               <li>
                 <a href="/" title="Wish List">
-                  <i class="fa-solid fa-heart"></i>
+                  <i className="fa-solid fa-heart"></i>
                 </a>
               </li>
 
               <li>
                 <a href="/" title="Add to Cart">
-                  <i class="fa-solid fa-cart-shopping"></i>
+                  <i className="fa-solid fa-cart-shopping"></i>
                 </a>
               </li>
             </ul>
@@ -109,8 +103,8 @@ export default function Header2() {
         </div>
       </section>
 
-      <section className="header-2-primary">
-        <div className="header-2-primary-inner container d-none d-lg-block">
+      <section className="header-primary">
+        <div className="header-primary-inner container d-none d-lg-block">
           <ul className="d-flex justify-content-between align-items-center">
             <li>
               <a href="/" title="New Arrivals">
@@ -123,7 +117,7 @@ export default function Header2() {
               </a>
             </li>
             <li>
-              <a href="/pages/category_page" title="Men's">
+              <a href="/category_page" title="Men's">
                 Men{"'"}s
               </a>
             </li>
@@ -145,9 +139,9 @@ export default function Header2() {
           </ul>
         </div>
 
-        <div className="header-2-primary-search container d-lg-none position-relative">
+        <div className="header-primary-search container d-lg-none position-relative">
           <button type="button" title="Menu">
-            <i class="fa-solid fa-bars"></i>
+            <i className="fa-solid fa-bars"></i>
           </button>
 
           <form>
@@ -159,7 +153,7 @@ export default function Header2() {
             />
 
             <button type="submit" title="Search">
-              <i class="fa-solid fa-magnifying-glass"></i>
+              <i className="fa-solid fa-magnifying-glass"></i>
             </button>
           </form>
 
@@ -172,7 +166,7 @@ export default function Header2() {
           </a>
         </div>
 
-        <div className="header-2-primary-banner d-lg-none"></div>
+        <div className="header-primary-banner d-lg-none"></div>
       </section>
     </>
   );

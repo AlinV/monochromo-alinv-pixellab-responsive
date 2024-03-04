@@ -1,12 +1,12 @@
 import CatalogPreview from '@/components/catalog/CatalogPreview';
-import Footer from '@/components/common/Footer';
-import Header2 from '@/components/common/Header2';
+import Footer from '@/components/common/FooterMain';
+import Header from '@/components/common/HeaderOtherPages';
 
 export default function ProductDescription() {
   return (
     <>
       <header className="header2">
-        <Header2></Header2>
+        <Header></Header>
       </header>
 
       <main className="product-description container">
@@ -70,7 +70,7 @@ export default function ProductDescription() {
             </div>
 
             <footer>
-              <a href="/pages/product_description" title="View full size image">
+              <a href="/product_description" title="View full size image">
                 View full size image
               </a>
             </footer>
@@ -137,7 +137,7 @@ export default function ProductDescription() {
                     <button type="button">Wishlist</button>
                   </div>
 
-                  <a href="/pages/shopping_cart" title="Go to checkout">
+                  <a href="/shopping_cart" title="Go to checkout">
                     Checkout
                   </a>
                 </div>
@@ -225,7 +225,7 @@ export default function ProductDescription() {
         <section className="product-description-catalog-preview">
           <header>
             <h1>
-              <a href="/pages/category_page" title="Check out similar watches">
+              <a href="/category_page" title="Check out similar watches">
                 You may also like
               </a>
             </h1>
@@ -237,7 +237,7 @@ export default function ProductDescription() {
         <section className="product-description-catalog-preview">
           <header>
             <h1>
-              <a href="/pages/category_page" title="Recently view">
+              <a href="/category_page" title="Recently view">
                 Recently view
               </a>
             </h1>

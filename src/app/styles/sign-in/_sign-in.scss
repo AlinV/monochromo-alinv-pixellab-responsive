@@ -40,6 +40,96 @@
           }
         }
       }
+
+      .sing-in-page-forms {
+        grid-template: 1fr / 1fr 1fr;
+        margin-top: 48px;
+        padding: 0 100px;
+      }
+
+      .form-sign-in-page {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        padding: 0 68px;
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+
+        & > h1 {
+          padding-bottom: 22px;
+          border-bottom: 2px solid $gray-primary;
+          font-family: 'Playfair Display', sans-serif;
+          font-size: 20px;
+        }
+
+        & > input {
+          outline: none;
+          padding: 14px 10px;
+          border: 2px solid $gray-primary;
+        }
+
+        button[type='button'] {
+          text-transform: uppercase;
+          padding: 8px 28px;
+          background-color: $white;
+          color: $brand-primary;
+          border: 2px solid $brand-primary;
+          width: fit-content;
+          align-self: center;
+          transition: background-color 0.2s linear, color 0.2s linear;
+        }
+
+        button[type='button']:hover {
+          background-color: $brand-primary;
+          color: $white;
+        }
+      }
+
+      .form-sign-in {
+        border-right: 2px solid $gray-primary;
+
+        & > p {
+          text-align: start;
+        }
+
+        & > a {
+          font-size: 14px;
+          text-decoration: underline;
+        }
+      }
+
+      .form-register {
+        .gdpr-field {
+          & > label {
+            cursor: pointer;
+          }
+
+          span {
+            text-decoration: underline;
+          }
+
+          & > input[type='checkbox'] {
+            display: inline-block;
+            appearance: none;
+            position: relative;
+            cursor: pointer;
+          }
+
+          & > input[type='checkbox']::before {
+            content: ' ';
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            background-color: $white;
+            border: 1px solid $gray-primary;
+            border-radius: 50%;
+          }
+
+          & > input[type='checkbox']:checked::before {
+            background-color: $brand-primary;
+          }
+        }
+      }
     }
   }
 }
