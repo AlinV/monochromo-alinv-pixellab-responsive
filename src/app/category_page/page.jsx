@@ -1,4 +1,5 @@
 import CatalogPreview from '@/components/catalog/CatalogPreview';
+import { menProducts } from '@/components/catalog/productData';
 import FooterMain from '@/components/common/FooterMain';
 import HeaderMain from '@/components/common/HeaderMain';
 import HeaderOtherPages from '@/components/common/HeaderOtherPages';
@@ -104,27 +105,27 @@ export default function CategoryPage() {
         </aside>
 
         <section>
-          <CatalogPreview></CatalogPreview>
+          <CatalogPreview productTiles={menProducts}></CatalogPreview>
         </section>
 
         <section>
-          <CatalogPreview></CatalogPreview>
+          <CatalogPreview productTiles={menProducts}></CatalogPreview>
         </section>
 
         <section>
-          <CatalogPreview></CatalogPreview>
+          <CatalogPreview productTiles={menProducts}></CatalogPreview>
         </section>
 
         <section>
-          <CatalogPreview></CatalogPreview>
+          <CatalogPreview productTiles={menProducts}></CatalogPreview>
         </section>
 
         <section>
-          <CatalogPreview></CatalogPreview>
+          <CatalogPreview productTiles={menProducts}></CatalogPreview>
         </section>
 
         <section>
-          <CatalogPreview></CatalogPreview>
+          <CatalogPreview productTiles={menProducts}></CatalogPreview>
         </section>
 
         <footer className="text-center">

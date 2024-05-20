@@ -1,8 +1,11 @@
+import { menProducts } from '@/components/catalog/productData';
 import Footer from '@/components/common/FooterMain';
 import Footer2 from '@/components/common/FooterSecondary';
 import Header2 from '@/components/common/HeaderOtherPages';
 
 export default function ShoppingCart() {
+  const [product] = menProducts;
+  const { imageSrc, imageAlt, price } = product;
   return (
     <>
       <header className="header2">
@@ -30,10 +33,7 @@ export default function ShoppingCart() {
           <ul>
             <li>
               <picture>
-                <img
-                  src="/images/products/recently_viewed_thumbnail_2-5.png"
-                  alt="Black Cluse watch with fabric strap"
-                />
+                <img src={imageSrc} alt={imageAlt} />
               </picture>
             </li>
 
@@ -59,7 +59,7 @@ export default function ShoppingCart() {
               </div>
             </li>
 
-            <li>$475</li>
+            <li>${price}</li>
           </ul>
 
           <div className="d-flex flex-column align-items-end">
@@ -76,7 +76,7 @@ export default function ShoppingCart() {
             <div className="cart-product-pricing">
               <span>subtotal</span>
 
-              <span>$475</span>
+              <span>${price}</span>
 
               <span>shipping</span>
 
@@ -88,7 +88,7 @@ export default function ShoppingCart() {
 
               <span>total</span>
 
-              <span>$475</span>
+              <span>${price}</span>
             </div>
 
             <a href="/sign_in" title="Buy now" className="buy-product">

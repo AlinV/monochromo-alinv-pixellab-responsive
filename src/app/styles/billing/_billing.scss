@@ -52,7 +52,8 @@
           text-align: start;
         }
 
-        .billing-address {
+        .billing-address,
+        .shipping-address {
           & > a {
             height: 100%;
             display: flex;
@@ -119,7 +120,8 @@
       }
     }
 
-    .s-and-b-address {
+    .s-and-b-address,
+    .delivery-method {
       &-inner {
         display: grid;
         grid-template: 1fr / 1fr 1fr;
@@ -151,6 +153,13 @@
         }
       }
 
+      .delivery-method-inner {
+        &.shipping-address,
+        .billing-address {
+          height: 200px;
+        }
+      }
+
       .shipping-address {
         & > p {
           display: flex;
@@ -166,6 +175,86 @@
       padding-top: 20px;
       padding-left: 32px;
       border-top: 2px solid #ccc;
+    }
+
+    .payment-methods {
+      &-inner {
+        border-top: 2px solid $gray-primary;
+        padding: 24px 0 48px 0;
+
+        & > ul {
+          display: flex;
+          gap: 40px;
+          font-size: 30px;
+
+          & > li {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+          }
+        }
+
+        .payment-form {
+          padding-left: 32px;
+          margin-top: 24px;
+          gap: 24px;
+          font-weight: 600;
+          width: 448px;
+
+          & input,
+          select {
+            outline: none;
+            border: 1px solid #cccccc;
+            height: 36px;
+          }
+
+          .input-container {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+            width: 100%;
+          }
+
+          .month-year-container {
+            & > div {
+              width: 100%;
+              display: flex;
+              gap: 16px;
+
+              .expiration-date-month {
+                width: 100%;
+              }
+
+              .expiration-date-year {
+                width: 141px;
+              }
+            }
+          }
+
+          .cvv-container {
+            width: 124px;
+          }
+        }
+      }
+    }
+
+    .finish-purchase-container {
+      & > a {
+        padding: 16px 42px;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        border: 1px solid $brand-primary;
+        text-transform: uppercase;
+        color: #e8e8e8;
+        background-color: $brand-primary;
+        transition: background-color 0.2s linear, color 0.2s linear;
+
+        &:hover {
+          background-color: $white;
+          color: $brand-primary;
+        }
+      }
     }
   }
 }

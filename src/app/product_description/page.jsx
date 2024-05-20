@@ -1,8 +1,13 @@
+'use client';
+
 import CatalogPreview from '@/components/catalog/CatalogPreview';
+import { menProducts } from '@/components/catalog/productData';
 import Footer from '@/components/common/FooterMain';
 import Header from '@/components/common/HeaderOtherPages';
 
 export default function ProductDescription() {
+  const [product] = menProducts;
+  const { imageSrc, altSrc, heading, price } = product;
   return (
     <>
       <header className="header2">
@@ -14,10 +19,7 @@ export default function ProductDescription() {
           <div className="product-picture">
             <header className="mb-2 mb-lg-4">
               <picture>
-                <img
-                  src="/images/products/recently_viewed_thumbnail_2-5.png"
-                  alt="Black Cluse watch with fabric strap"
-                />
+                <img src={imageSrc} alt={altSrc} />
               </picture>
             </header>
 
@@ -27,41 +29,13 @@ export default function ProductDescription() {
               </button>
 
               <ul className="d-flex gap-2 gap-lg-4">
-                <li>
-                  <picture>
-                    <img
-                      src="/images/products/recently_viewed_thumbnail_2-5.png"
-                      alt="Black Cluse watch with fabric strap"
-                    />
-                  </picture>
-                </li>
-
-                <li>
-                  <picture>
-                    <img
-                      src="/images/products/recently_viewed_thumbnail_2-5.png"
-                      alt="Black Cluse watch with fabric strap"
-                    />
-                  </picture>
-                </li>
-
-                <li>
-                  <picture>
-                    <img
-                      src="/images/products/recently_viewed_thumbnail_2-5.png"
-                      alt="Black Cluse watch with fabric strap"
-                    />
-                  </picture>
-                </li>
-
-                <li>
-                  <picture>
-                    <img
-                      src="/images/products/recently_viewed_thumbnail_2-5.png"
-                      alt="Black Cluse watch with fabric strap"
-                    />
-                  </picture>
-                </li>
+                {menProducts.map((product, index) => (
+                  <li key={index}>
+                    <picture>
+                      <img src={product.imageSrc} alt={product.altSrc} />
+                    </picture>
+                  </li>
+                ))}
               </ul>
 
               <button type="button" className="d-none d-lg-inline">
@@ -78,7 +52,9 @@ export default function ProductDescription() {
 
           <div className="product-costumization">
             <header>
-              <h1> Monochrome Max Bill - $425</h1>
+              <h1>
+                {heading} - ${price}
+              </h1>
             </header>
 
             <div className="product-costumization-content">
@@ -231,7 +207,7 @@ export default function ProductDescription() {
             </h1>
           </header>
 
-          <CatalogPreview></CatalogPreview>
+          <CatalogPreview productTiles={menProducts}></CatalogPreview>
         </section>
 
         <section className="product-description-catalog-preview">
@@ -243,7 +219,7 @@ export default function ProductDescription() {
             </h1>
           </header>
 
-          <CatalogPreview></CatalogPreview>
+          <CatalogPreview productTiles={menProducts}></CatalogPreview>
         </section>
       </main>
 
